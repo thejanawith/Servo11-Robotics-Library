@@ -1,0 +1,17 @@
+#include <Servo11.h>
+
+Servo11 robot;
+
+void setup() {
+  robot.begin();  // Initialize with default pins
+  robot.setHumanoidConfiguration();  // Set named configurations
+  robot.setInitialPositions();  // Move to safe starting positions
+}
+
+void loop() {
+  // Control servos using intuitive names
+  robot.moveServoSmooth(Servo11::OLUWA_WATETA, 100, 15);
+  delay(1000);
+  robot.moveServoSmooth(Servo11::OLUWA_WATETA, 59, 15);
+  delay(1000);
+}
