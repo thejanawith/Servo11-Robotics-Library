@@ -1,0 +1,52 @@
+{
+  "name": "Servo11-Robotics",
+  "version": "1.0.0",
+  "description": "Advanced 11-servo control library for humanoid robots and robotic arms with named servo configurations, smooth movement control, and predefined motion sequences",
+  "keywords": [
+    "servo",
+    "robotics", 
+    "humanoid",
+    "robot-arm",
+    "arduino",
+    "esp32",
+    "mega",
+    "automation",
+    "motion-control",
+    "geek-yaka"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geekyaka/Servo11-Robotics-Library.git"
+  },
+  "authors": [
+    {
+      "name": "Geek Yaka Robotics",
+      "email": "geekyaka.robotics@gmail.com",
+      "url": "https://github.com/geekyaka",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/geekyaka/Servo11-Robotics-Library",
+  "documentation": "https://github.com/geekyaka/Servo11-Robotics-Library/blob/main/README.md",
+  "dependencies": {
+    "arduino-libraries/Servo": "^1.1.8"
+  },
+  "frameworks": "arduino",
+  "platforms": [
+    "atmelavr",
+    "espressif32",
+    "espressif8266"
+  ],
+  "headers": "Servo11.h",
+  "export": {
+    "include": [
+      "src/*",
+      "examples/*",
+      "docs/*",
+      "library.json",
+      "LICENSE",
+      "README.md"
+    ]
+  }
+}
